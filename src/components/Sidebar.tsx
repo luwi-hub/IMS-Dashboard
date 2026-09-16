@@ -1,29 +1,14 @@
 "use client";
 
-import { LayoutDashboard, TrendingUp, FileText, DollarSign, Settings } from "lucide-react";
+import { LayoutDashboard, TrendingUp, RefreshCw, FileText, DollarSign, Settings } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const routes = [
-  {
-    id: "management",
-    label: "Management",
-    icon: LayoutDashboard,
-  },
-  {
-    id: "sales",
-    label: "Sales",
-    icon: TrendingUp,
-  },
-  {
-    id: "claims",
-    label: "Claims",
-    icon: FileText,
-  },
-  {
-    id: "accounting",
-    label: "Accounting",
-    icon: DollarSign,
-  },
+  { id: "management", label: "Management", icon: LayoutDashboard },
+  { id: "sales", label: "Sales", icon: TrendingUp },
+  { id: "renewals", label: "Renewals", icon: RefreshCw },
+  { id: "claims", label: "Claims", icon: FileText },
+  { id: "accounting", label: "Accounting", icon: DollarSign },
 ];
 
 interface SidebarProps {
